@@ -8,10 +8,7 @@ The base container is [OpenJDK8 by AdoptOpenJDK](https://hub.docker.com/r/adopto
 ### Building
 
 ```bash
-DOCKER_BUILDKIT=1 docker build -t vouchio/datomic-pro \ 
-  --build-arg DATOMIC_VERSION=<version>
-  --build-arg MYDATOMIC_USER=<my-datomic-username> \
-  --build-arg MYDATOMIC_PASSWORD=<my-datomic-password> .
+MYDATOMIC_USER=xxx MYDATOMIC_PASSWORD=yyy ./build.sh build
 ```
 
 Retrieve your username and download key from [My Datomic](https://my.datomic.com/account).
