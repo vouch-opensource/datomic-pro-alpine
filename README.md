@@ -38,6 +38,6 @@ GIT_SHA=$(git rev-parse HEAD) ## git SHA of this repo
 JVM_OPTS="-Xms1g -Xmx2g"
 docker run -v $(pwd)/transactor.properties:/etc/datomic/transactor.properties \
   -v $(pwd)/data:/data \
-  docker.pkg.github.com/vouchio/datomic-pro-alpine/datomic-pro-alpine:1.0.6165-$GIT_SHA \
+  docker.pkg.github.com/vouchio/datomic-pro-alpine/datomic-pro-alpine:1.0.6222-$GIT_SHA \
   sh -c "/opt/datomic/bin/transactor $JVM_OPTS /etc/datomic/transactor.properties"
 ```
