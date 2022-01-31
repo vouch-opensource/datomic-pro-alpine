@@ -1,4 +1,4 @@
-FROM alpine:3.11 as build
+FROM alpine:3.14 as build
 
 ARG MYDATOMIC_USER
 ARG MYDATOMIC_PASSWORD
