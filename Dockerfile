@@ -8,7 +8,7 @@ RUN apk --no-cache add zip bash wget
 
 WORKDIR /opt
 
-RUN wget --http-user=${MYDATOMIC_USER} --http-password=${MYDATOMIC_PASSWORD} \
+RUN wget --inet4-only --http-user=${MYDATOMIC_USER} --http-password=${MYDATOMIC_PASSWORD} \
   https://my.datomic.com/repo/com/datomic/datomic-pro/${DATOMIC_VERSION}/datomic-pro-${DATOMIC_VERSION}.zip -O datomic-pro-${DATOMIC_VERSION}.zip
 RUN unzip datomic-pro-${DATOMIC_VERSION}.zip
 RUN mv datomic-pro-${DATOMIC_VERSION} datomic

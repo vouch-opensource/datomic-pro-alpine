@@ -22,7 +22,7 @@ jobs:
         run: ./build.sh build
 
       - name: Docker login
-        run: docker login -u publisher -p ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
+        run: docker login -u publisher -p ${{ secrets.GITHUB_TOKEN }} ghcr.io
 
       - name: Push
         run: ./build.sh push
