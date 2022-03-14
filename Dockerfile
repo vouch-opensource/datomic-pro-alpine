@@ -17,7 +17,7 @@ RUN sed -i '1s|.*|#!/bin/sh|' datomic/bin/classpath
 RUN sed -i '1s|.*|#!/bin/sh|' datomic/bin/datomic
 RUN sed -i '1s|.*|#!/bin/sh|' datomic/bin/run
 
-FROM adoptopenjdk/openjdk8:jdk8u252-b09-alpine-slim
+FROM eclipse-temurin:8-jdk-alpine
 
 COPY --from=build /opt/datomic /opt/datomic
 
