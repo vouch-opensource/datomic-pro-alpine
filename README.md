@@ -1,7 +1,7 @@
 # Datomic Pro on Alpine Linux
 
 [Datomic Pro](https://www.datomic.com/on-prem.html) Docker container running on Alpine Linux. 
-The base container is [OpenJDK8 by AdoptOpenJDK](https://hub.docker.com/r/adoptopenjdk/openjdk8). 
+The base container is [JDK-8-alpine by Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin). 
 
 ## Usage
 
