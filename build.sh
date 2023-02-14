@@ -10,7 +10,7 @@ DOCKER_TAG=${IMAGE}:${VERSION}
 
 case "$1" in
   build)
-    DOCKER_BUILDKIT=1 docker buildx build -t ${DOCKER_TAG} \
+    docker buildx build -t ${DOCKER_TAG} \
       --platform linux/amd64 \
       --platform linux/x86_64 \
       --platform linux/arm64/v8 \
