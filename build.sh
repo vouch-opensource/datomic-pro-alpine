@@ -11,7 +11,7 @@ DOCKER_TAG=${IMAGE}:${VERSION}
 case "$1" in
   build)
     docker buildx build -t ${DOCKER_TAG} \
-      --platform linux/arm64/v8 \
+      --platform linux/arm64 \
       --build-arg DATOMIC_VERSION \
       --build-arg MYDATOMIC_USER \
       --build-arg MYDATOMIC_PASSWORD .
