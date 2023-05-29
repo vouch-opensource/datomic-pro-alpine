@@ -16,9 +16,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        env:
-          MYDATOMIC_USER: ${{ secrets.MYDATOMIC_USER }}
-          MYDATOMIC_PASSWORD: ${{ secrets.MYDATOMIC_PASSWORD }}
         run: ./build.sh build
 
       - name: Docker login

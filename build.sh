@@ -11,10 +11,8 @@ DOCKER_TAG=${IMAGE}:${VERSION}
 case "$1" in
   build)
     DOCKER_BUILDKIT=1 docker build -t ${DOCKER_TAG} \
-      --build-arg DATOMIC_VERSION \
-      --build-arg MYDATOMIC_USER \
-      --build-arg MYDATOMIC_PASSWORD .
-    ;;
+      --build-arg DATOMIC_VERSION .
+      ;;
 
   push)
     docker push ${DOCKER_TAG}
