@@ -1,24 +1,22 @@
 # Datomic Pro on Alpine Linux
 
 [Datomic Pro](https://www.datomic.com/on-prem.html) Docker container running on Alpine Linux. 
-The base container is [JDK-8-alpine by Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin). 
+The base container is [JDK-11-alpine by Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin). 
 
 ## Usage
 
 ### Building
 
 ```bash
-MYDATOMIC_USER=xxx MYDATOMIC_PASSWORD=yyy ./build.sh build
+./build.sh build
 ```
-
-Retrieve your username and download key from [My Datomic](https://my.datomic.com/account).
 
 ### Configuration
 
 #### transactor.properties
 
 You have to configure Datomic by providing a `transactor.properties` file while running the container. 
-There intentionally is no default config since you need to provide a working license.
+There intentionally is no default config since it depends on the storage backend you intend to use.
 
 #### data directory
 
