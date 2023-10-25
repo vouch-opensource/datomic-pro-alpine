@@ -3,6 +3,10 @@
 [Datomic Pro](https://www.datomic.com/on-prem.html) Docker container running on Alpine Linux. 
 The base container is [JDK-11-alpine by Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin). 
 
+## Repository
+
+This image is maintained in [Docker Hub](https://hub.docker.com/repository/docker/vouchio/datomic-pro-alpine/general)
+
 ## Usage
 
 ### Building
