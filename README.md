@@ -3,6 +3,10 @@
 [Datomic Pro](https://www.datomic.com/on-prem.html) Docker container running on Alpine Linux. 
 The base container is [JDK-11-alpine by Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin). 
 
+## Repository
+
+This image is available at [Docker Hub](https://hub.docker.com/repository/docker/vouchio/datomic-pro-alpine/general)
+
 ## Usage
 
 ### Building
@@ -33,9 +37,10 @@ An example for running this container:
 
 ```bash
 GIT_SHA=$(git rev-parse HEAD) ## git SHA of this repo
+DATOMIC_VERSION=$(cat DATOMIC_VERSION) ## file with Datomic version
 JVM_OPTS="-Xms1g -Xmx2g"
 docker run -v $(pwd)/transactor.properties:/etc/datomic/transactor.properties \
   -v $(pwd)/data:/data \
-  docker.pkg.github.com/vouchio/datomic-pro-alpine/datomic-pro-alpine:1.0.6222-$GIT_SHA \
+  vouchio/datomic-pro-alpine:$DATOMIC_VERSION-$GIT_SHA \
   sh -c "/opt/datomic/bin/transactor $JVM_OPTS /etc/datomic/transactor.properties"
 ```

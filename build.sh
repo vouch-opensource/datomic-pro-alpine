@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE=ghcr.io/vouchio/datomic-pro-alpine
+IMAGE=vouchio/datomic-pro-alpine
 export DATOMIC_VERSION=$(cat DATOMIC_VERSION)
 GIT_SHA=$(git rev-parse HEAD)
 VERSION=${DATOMIC_VERSION}-${GIT_SHA}
