@@ -5,7 +5,7 @@ The base container is [JDK-11-alpine by Eclipse Temurin](https://hub.docker.com/
 
 ## Repository
 
-This image is maintained in [Docker Hub](https://hub.docker.com/repository/docker/vouchio/datomic-pro-alpine/general)
+This image is available at [Docker Hub](https://hub.docker.com/repository/docker/vouchio/datomic-pro-alpine/general)
 
 ## Usage
 
