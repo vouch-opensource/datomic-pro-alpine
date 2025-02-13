@@ -1,4 +1,4 @@
-FROM alpine:3.14 as build
+FROM alpine:3.21.2 as build
 
 ARG DATOMIC_VERSION
 
